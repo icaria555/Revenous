@@ -4,15 +4,12 @@ import App from './App.js';
 import act from "react-dom/test-utils";
 import { JSDOM } from 'jsdom';
 
-const assert = require('assert')
+const assert = require('assert');
 const { window } = new JSDOM('<!doctype html><html><body></body></html>');
-
-let jsdom = require('mocha-jsdom');
 globalThis.document = window.document;
-let rootContainer;
-
 globalThis.window = window;
 
+let rootContainer;
 beforeEach(() => {
   rootContainer = document.createElement("div");
   document.body.appendChild(rootContainer);
