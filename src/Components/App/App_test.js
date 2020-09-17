@@ -21,9 +21,9 @@ afterEach(() => {
 });
 
 describe("App Component Testing", () => {
-  it("Renders Hello World Title", () => {
+  it("Renders Title", () => {
     ReactDOM.render(<App />, rootContainer);
     const h1 = rootContainer.querySelector("h1");
-    assert.strictEqual(h1.textContent, "Hello World");
+    assert.strictEqual(h1.textContent, "ravenous");
   });
 });
