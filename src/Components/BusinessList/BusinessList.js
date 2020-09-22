@@ -4,12 +4,26 @@ import './BusinessList.css';
 
 class BusinessList extends React.Component {
     render() {
-        return (
-            <div className="BusinessList">
-                Test
-            </div>
-        )
+        const businesses = [];
+        for(const b of this.props.businesses) {
+            businesses.push(<Business business={b}/>)
+        }
+        if(businesses.length === 0) {
+            return (
+                <div className="BusinessList">
+                    No Item
+                </div>
+            ) 
+        } else {
+            return (
+                <div className="BusinessList">
+                    {businesses}
+                </div>
+            )
+        }
+        
     }
 }
 
+BusinessList.defaultProps = {businesses: []};
 export default BusinessList;

@@ -33,7 +33,7 @@ describe("Business Component Testing", () => {
             rating: 4.5,
             reviewCount: 90
         };
-        ReactDOM.render(<Business />, rootContainer);
+        ReactDOM.render(<Business business={business}/>, rootContainer);
         const h2 = rootContainer.querySelector("h2");
         assert.strictEqual(h2.textContent, business.name);
     });
