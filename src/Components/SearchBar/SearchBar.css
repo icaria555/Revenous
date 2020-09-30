@@ -69,6 +69,7 @@
   font-weight: 600;
   transition: background-color 0.5s;
   font-size: 1.2rem;
+  border-style: hidden;
 }
 
 .SearchBar-submit button:hover {
