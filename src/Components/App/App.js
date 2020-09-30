@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../logo.svg';
 import './App.css';
 import BusinessList from '../BusinessList/BusinessList'
 import SearchBar from '../SearchBar/SearchBar'
@@ -26,7 +25,6 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
       <h1>ravenous</h1>
       <SearchBar searchYelp={searchYelp}/>
       <BusinessList businesses={businesses} />
