@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "//icaria555.github.io/Revenous/static/css/main.81f1dbee.chunk.css",
+    "main.js": "//icaria555.github.io/Revenous/static/js/main.19b47952.chunk.js",
+    "main.js.map": "//icaria555.github.io/Revenous/static/js/main.19b47952.chunk.js.map",
+    "runtime-main.js": "//icaria555.github.io/Revenous/static/js/runtime-main.a043cf3c.js",
+    "runtime-main.js.map": "//icaria555.github.io/Revenous/static/js/runtime-main.a043cf3c.js.map",
+    "static/js/2.31e86184.chunk.js": "//icaria555.github.io/Revenous/static/js/2.31e86184.chunk.js",
+    "static/js/2.31e86184.chunk.js.map": "//icaria555.github.io/Revenous/static/js/2.31e86184.chunk.js.map",
+    "index.html": "//icaria555.github.io/Revenous/index.html",
+    "precache-manifest.69042012ce05fc555baf4b0e8459d25c.js": "//icaria555.github.io/Revenous/precache-manifest.69042012ce05fc555baf4b0e8459d25c.js",
+    "service-worker.js": "//icaria555.github.io/Revenous/service-worker.js",
+    "static/css/main.81f1dbee.chunk.css.map": "//icaria555.github.io/Revenous/static/css/main.81f1dbee.chunk.css.map",
+    "static/js/2.31e86184.chunk.js.LICENSE.txt": "//icaria555.github.io/Revenous/static/js/2.31e86184.chunk.js.LICENSE.txt",
+    "static/media/SearchBar.css": "//icaria555.github.io/Revenous/static/media/background_search_desktop.d9fdc6c6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a043cf3c.js",
+    "static/js/2.31e86184.chunk.js",
+    "static/css/main.81f1dbee.chunk.css",
+    "static/js/main.19b47952.chunk.js"
+  ]
+}
