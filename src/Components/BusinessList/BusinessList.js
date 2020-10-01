@@ -6,7 +6,7 @@ class BusinessList extends React.Component {
     render() {
         const businesses = [];
         for(const b of this.props.businesses) {
-            businesses.push(<Business business={b}/>)
+            businesses.push(<Business business={b} key={b.id}/>)
         }
         if(businesses.length === 0) {
             return (
