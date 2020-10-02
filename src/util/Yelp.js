@@ -3,10 +3,10 @@ const apiKey = "lIKc43znjUZemWuADLJ9krfNUONiiueiKBak_2ebvaa3qBYgR9xmY_38uVUrFN-i
 // Client ID
 // LBQ9meWCaeqmfWbeDYkQOw
 const fetch = require("node-fetch")
-
+const cors = "https://cors-anywhere.herokuapp.com/";
 const Yelp = {
-    search(term, location, sortBy) {
-        return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
+    search(term, location, sortBy, corsEnable) {
+        return fetch((corsEnable? cors: "") + `https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
             method: 'get',
             headers: {
                 'Authorization': `Bearer ${apiKey}`,
