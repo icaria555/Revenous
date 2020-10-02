@@ -6,7 +6,17 @@ const fetch = require("node-fetch")
 const cors = "https://cors-anywhere.herokuapp.com/";
 const Yelp = {
     search(term, location, sortBy, corsEnable) {
-        return fetch((corsEnable? cors: "") + `https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
+        let queryAttr = [];
+        if(term) queryAttr.push(`term=${term}`);
+        if(location) queryAttr.push(`location=${location}`);
+        if(sortBy) queryAttr.push(`sort_by=${sortBy}`);
+        if(queryAttr.length === 0) {
+            alert("please input Businesses Name or Place before push this button.")
+            return;
+        }
+
+        const queryUrl = "https://api.yelp.com/v3/businesses/search?" + queryAttr.join('&');
+        return fetch((corsEnable? cors: "") + queryUrl, {
             method: 'get',
             headers: {
                 'Authorization': `Bearer ${apiKey}`,

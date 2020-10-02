@@ -37,8 +37,7 @@
 }
 
 .SearchBar-sort-options li.active {
-  background: #f0c36c;
-  opacity:0.7;
+  background: rgb(240 195 108 / 0.5);
   border-radius: 15px;
 }
 
