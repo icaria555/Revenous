@@ -34,7 +34,15 @@
 .SearchBar-sort-options li.active,
 .SearchBar-sort-options li.active:hover {
   border-bottom: 1px solid #f0c36c;
-  color: #f0c36c;
+}
+
+.SearchBar-sort-options li.active {
+  background: rgb(240 195 108 / 0.5);
+  border-radius: 15px;
+}
+
+.SearchBar-sort-options span.sortByOption {
+  opacity:1 !important;
 }
 
 .SearchBar-fields {
